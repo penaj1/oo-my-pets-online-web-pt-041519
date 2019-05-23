@@ -1,6 +1,7 @@
 class Owner
   # code goes here
   
+<<<<<<< HEAD
   @@all = []
   
   def self.all
@@ -15,13 +16,18 @@ class Owner
     @@all.clear
   end
   
+=======
+>>>>>>> 58d0eae9d7a4e92a2b221b6e40d0df120af613a0
   attr_accessor :pets, :name
   attr_reader :species
   
   def initialize(species, pets = {fishes: [], cats: [], dogs: []})
     @species = species
     @pets = pets
+<<<<<<< HEAD
     @@all << self
+=======
+>>>>>>> 58d0eae9d7a4e92a2b221b6e40d0df120af613a0
   end
   
   def say_species
@@ -73,6 +79,10 @@ end
   end
   
   def list_pets
+<<<<<<< HEAD
     return"I have #{@pets[:fishes].length} fish, #{@pets[:dogs].length} dog(s), and #{@pets[:cats].length} cat(s)."
+=======
+    @
+>>>>>>> 58d0eae9d7a4e92a2b221b6e40d0df120af613a0
   end
 end
